@@ -3,65 +3,99 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login Form</title>
+    <title>Beautiful HTML Page</title>
     <style>
         body {
             font-family: 'Arial', sans-serif;
             margin: 0;
             padding: 0;
             background-color: #f4f4f4;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            height: 100vh;
         }
 
-        form {
-            background-color: #fff;
+        header {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1em;
+        }
+
+        nav {
+            background-color: #444;
+            padding: 0.5em;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            padding: 1em;
+            margin: 0 1em;
+        }
+
+        nav a:hover {
+            background-color: #555;
+        }
+
+        main {
+            display: flex;
+            justify-content: space-between;
             padding: 2em;
+        }
+
+        section {
+            flex: 2;
+            background-color: #fff;
+            padding: 1em;
             border-radius: 5px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            width: 300px;
         }
 
-        label {
-            display: block;
-            margin-bottom: 0.5em;
+        aside {
+            flex: 1;
+            background-color: #eee;
+            padding: 1em;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
 
-        input {
-            width: 100%;
-            padding: 0.5em;
-            margin-bottom: 1em;
-            border: 1px solid #ccc;
-            border-radius: 3px;
-        }
-
-        button {
-            background-color: #4caf50;
+        footer {
+            background-color: #333;
             color: #fff;
-            padding: 0.7em;
-            border: none;
-            border-radius: 3px;
-            cursor: pointer;
-        }
-
-        button:hover {
-            background-color: #45a049;
+            text-align: center;
+            padding: 1em;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
         }
     </style>
 </head>
 <body>
 
-    <form>
-        <label for="username">Username or Email:</label>
-        <input type="text" id="username" name="username" required>
+    <header>
+        <h1>Beautiful HTML Page</h1>
+    </header>
 
-        <label for="password">Password:</label>
-        <input type="password" id="password" name="password" required>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Services</a>
+        <a href="#">Contact</a>
+    </nav>
 
-        <button type="submit">Login</button>
-    </form>
+    <main>
+        <section>
+            <h2>Main Content</h2>
+            <p>This is the main content of the page. It can include articles, posts, or any relevant information.</p>
+        </section>
+
+        <aside>
+            <h2>Sidebar</h2>
+            <p>This is a sidebar with additional content or links.</p>
+        </aside>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Beautiful HTML Page</p>
+    </footer>
 
 </body>
 </html>
